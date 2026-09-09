@@ -27,7 +27,7 @@
     border-radius: 12px;
     overflow: hidden;
   }
-  .agenda a {
+  .agenda a, .agenda .row {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -40,7 +40,7 @@
     color: #4B4B4B;
     transition: background-color 0.12s ease;
   }
-  .agenda a:last-child { border-bottom: none; }
+  .agenda a:last-child, .agenda .row:last-child { border-bottom: none; }
   .agenda a:hover { background: #FAFAFA; }
   .agenda svg { flex-shrink: 0; }
 </style>
@@ -54,40 +54,32 @@
       <path d="M9 4v16" fill="none" stroke="#4D4D4D" stroke-width="1.6"/>
       <path d="M13.5 9h4M13.5 12.5h4" fill="none" stroke="#4D4D4D" stroke-width="1.6" stroke-linecap="round"/>
     </svg>
-    advanced-automated
+    Advanced-automated
   </a>
-  <a href="https://woo-mi.github.io/agents-list-default/">
+  <div class="row">
     <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="#4D4D4D" stroke-width="1.6"/>
       <path d="M9 4v16" fill="none" stroke="#4D4D4D" stroke-width="1.6"/>
       <path d="M13.5 9h4M13.5 12.5h4" fill="none" stroke="#4D4D4D" stroke-width="1.6" stroke-linecap="round"/>
     </svg>
-    agents-list
-  </a>
-  <a href="https://woo-mi.github.io/live-apps-agent-report-view/">
+    Interview &ndash; AI-automated parameter setting
+  </div>
+  <div class="row">
     <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="#4D4D4D" stroke-width="1.6"/>
       <path d="M9 4v16" fill="none" stroke="#4D4D4D" stroke-width="1.6"/>
       <path d="M13.5 9h4M13.5 12.5h4" fill="none" stroke="#4D4D4D" stroke-width="1.6" stroke-linecap="round"/>
     </svg>
-    agent-report-view
-  </a>
-  <a href="https://woo-mi.github.io/user-activity-final/">
+    Interview &ndash; Manual parameter setting
+  </div>
+  <div class="row">
     <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="#4D4D4D" stroke-width="1.6"/>
       <path d="M9 4v16" fill="none" stroke="#4D4D4D" stroke-width="1.6"/>
       <path d="M13.5 9h4M13.5 12.5h4" fill="none" stroke="#4D4D4D" stroke-width="1.6" stroke-linecap="round"/>
     </svg>
-    user-activity-report
-  </a>
-  <a href="https://woo-mi.github.io/live-apps-list-view/">
-    <svg width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="#4D4D4D" stroke-width="1.6"/>
-      <path d="M9 4v16" fill="none" stroke="#4D4D4D" stroke-width="1.6"/>
-      <path d="M13.5 9h4M13.5 12.5h4" fill="none" stroke="#4D4D4D" stroke-width="1.6" stroke-linecap="round"/>
-    </svg>
-    live-apps
-  </a>
+    Interview &ndash; Conversational parameter setting
+  </div>
 </nav>
 
 </body>
