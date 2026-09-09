@@ -18,9 +18,18 @@
     justify-content: center;
     align-items: center;
   }
-  .agenda {
+  .section {
     width: 440px;
     max-width: calc(100% - 48px);
+  }
+  .section-header {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666666;
+    margin: 0 2px 10px;
+  }
+  .agenda {
+    width: 100%;
     height: fit-content;
     background: #FFFFFF;
     border: 1px solid #E8E8E8;
@@ -45,20 +54,20 @@
 </head>
 <body>
 
-<nav class="agenda">
-  <a href="https://woo-mi.github.io/agent-advanced-automated-version/">
-    Advanced-automated
-  </a>
-  <a href="https://woo-mi.github.io/interview-ai-automated/">
-    Interview &ndash; AI-automated parameter setting
-  </a>
-  <div class="row">
-    Interview &ndash; Manual parameter setting
-  </div>
-  <div class="row">
-    Interview &ndash; Conversational parameter setting
-  </div>
-</nav>
+<div class="section">
+  <div class="section-header">Create agent from</div>
+  <nav class="agenda">
+    <a href="https://woo-mi.github.io/agent-advanced-automated-version/">
+      Home
+    </a>
+    <div class="row">
+      List view
+    </div>
+    <div class="row">
+      Chat
+    </div>
+  </nav>
+</div>
 
 </body>
 </html>
