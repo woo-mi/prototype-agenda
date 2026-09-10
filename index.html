@@ -15,6 +15,7 @@
     background: #FFFFFF;
     -webkit-font-smoothing: antialiased;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -22,6 +23,7 @@
     width: 440px;
     max-width: calc(100% - 48px);
   }
+  .section + .section { margin-top: 28px; }
   .section-header {
     font-size: 14px;
     font-weight: 500;
@@ -66,6 +68,18 @@
     <a href="https://woo-mi.github.io/agent-chat/">
       Chat
     </a>
+  </nav>
+</div>
+
+<div class="section">
+  <div class="section-header">Debug</div>
+  <nav class="agenda">
+    <div class="row">
+      Individual agent run logs
+    </div>
+    <div class="row">
+      All agent runs
+    </div>
   </nav>
 </div>
 
