@@ -61,6 +61,19 @@
   }
   .agenda a:last-child, .agenda .row:last-child { border-bottom: none; }
   .agenda a:hover { background: #FAFAFA; }
+  .agenda a.has-desc {
+    height: auto;
+    min-height: 52px;
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2px;
+  }
+  .row-desc {
+    font-size: 12.5px;
+    color: #999999;
+  }
 </style>
 </head>
 <body>
@@ -70,8 +83,9 @@
 <div class="section">
   <div class="section-header">Sep 12, 2026</div>
   <nav class="agenda">
-    <a href="https://woo-mi.github.io/artifact-report-ai-suggestions/">
-      Artifact - report
+    <a class="has-desc" href="https://woo-mi.github.io/artifact-report-ai-suggestions/">
+      <span>Artifact - report</span>
+      <span class="row-desc">AI suggestions · display control left panel</span>
     </a>
     <a href="https://woo-mi.github.io/artifact-semantic-layer-ai-suggestions/">
       Artifact - semantic layer
